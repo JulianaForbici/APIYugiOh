@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+  background-image: url('https://media.giphy.com/media/2et9bGGGk1Eyg/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.produto {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 230px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffcc00;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.produto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.produto img:hover {
+  transform: scale(1.1);
+}
+
+.produto h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.produto p {
+  color: #bbb;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.produto span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.total-produtos {
+  color: #ffcc00;
+}
+
+.button-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+input[type="text"], select {
+  padding: 14px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 2px solid #ff5733;
+  background-color: #ffcc00;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(255, 99, 71, 0.6);
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #ff5733;
+  box-shadow: 0 0 15px rgba(255, 99, 71, 1);
+}
+
+select {
+  background: #ffcc00;
+}
+
+input[type="text"], select {
+  font-size: 1.2rem;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 2px solid #ff5733;
+  background-color: #ffcc00;
+  color: #fff;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #ff5733;
+  box-shadow: 0 0 15px rgba(255, 99, 71, 1);
+}

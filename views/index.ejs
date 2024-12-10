@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Yu-Gi-Oh!</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+
+    <!-- Link para fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Produtos</h1>
+        </header>
+        
+        <div id="produtos-container" class="produtos-container"></div>
+
+        <footer>
+            <div class="total-produtos">
+                <span><span id="total-produtos"></span></span>
+            </div>
+        </footer>
+    </div>
+
+    <div class="button-container">
+        <input type="text" id="search" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
+        <select id="ordenar" onchange="atualizarProdutos()">
+            <option value="nome-asc">Nome (A-Z)</option>
+            <option value="nome-desc">Nome (Z-A)</option>
+            <option value="preco-asc">Preço (menor para maior)</option>
+            <option value="preco-desc">Preço (maior para menor)</option>
+        </select>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            atualizarProdutos(); 
+        });
+    </script>
+</body>
+</html>
